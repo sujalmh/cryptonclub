@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#050505] text-gray-200 antialiased;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a; 
+}
+::-webkit-scrollbar-thumb {
+  background: #1b4d24; 
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #39FF14; 
+}
+
+/* Markdown Custom Overrides */
+.prose h1 {
+    font-size: 2.5rem !important;
+    margin-top: 2.5rem !important;
+    margin-bottom: 2rem !important;
+    font-weight: 800 !important;
+    line-height: 1.2 !important;
+    color: white !important;
+}
+
+.prose h2 {
+    font-size: 1.8rem !important;
+    margin-top: 3rem !important;
+    margin-bottom: 1.5rem !important;
+    padding-bottom: 0.5rem !important;
+    border-bottom: 1px solid #1b4d24 !important;
+    color: white !important;
+}
+
+.prose h3 {
+    font-size: 1.4rem !important;
+    margin-top: 2rem !important;
+    margin-bottom: 1rem !important;
+    color: white !important;
+}
+
+.prose p {
+    margin-bottom: 1.5rem !important;
+    line-height: 1.8 !important;
+    color: #e5e7eb !important;
+}
+
+.prose ul, .prose ol {
+    margin-bottom: 1.5rem !important;
+    padding-left: 1.5rem !important;
+}
+
+.prose ul {
+    list-style-type: disc !important;
+}
+
+.prose ol {
+    list-style-type: decimal !important;
+}
+
+.prose li {
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+    padding-left: 0.5rem !important;
+}
+
+.prose li::marker {
+    color: #39FF14 !important;
+}
+
+/* Pre Block Styling (Code Boxes) */
+.prose pre {
+    background-color: #050505 !important;
+    border: 1px solid #1b4d24 !important;
+    border-radius: 0.5rem !important;
+    padding: 1.5rem !important;
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+    font-family: 'Fira Code', monospace !important;
+}
+
+.prose pre code {
+    background-color: transparent !important;
+    color: inherit !important;
+    padding: 0 !important;
+    border: none !important;
+    font-family: inherit !important;
+}
+
+/* Inline Code Styling */
+.prose :not(pre) > code {
+    background-color: rgba(57, 255, 20, 0.15) !important;
+    color: #39FF14 !important;
+    padding: 0.2em 0.4em !important;
+    border-radius: 0.3em !important;
+    border: 1px solid rgba(57, 255, 20, 0.2) !important;
+    font-weight: normal !important;
+    font-family: 'Fira Code', monospace !important;
+}
+
+/* Blockquote Styling */
+.prose blockquote {
+    background-color: rgba(20, 20, 20, 0.4) !important;
+    border-left: 6px solid #39FF14 !important;
+    border-radius: 0.25rem !important;
+    padding: 0.75rem 0rem 0.75rem 1.25rem !important;
+    margin-top: 1.5rem !important;
+    margin-bottom: 2rem !important;
+    color: #9ca3af !important;
+    box-shadow: none !important;
+    border-top: none !important;
+    border-right: none !important;
+    border-bottom: none !important;
+}
+
+.prose blockquote p {
+    margin: 0 !important;
+    color: #9ca3af !important;
+}
+
+.prose blockquote p:first-of-type::before {
+    content: none !important;
+}
+.prose blockquote p:last-of-type::after {
+    content: none !important;
+}

@@ -1,0 +1,38 @@
+[
+    {
+        "id": "1",
+        "title": "SeaTF",
+        "description": "National-level cybersecurity CTF organized by ACM, IET, and IE at NIT Karnataka. Demonstrated strong skills in reverse engineering, web security, cryptography, and forensics.",
+        "year": "2025",
+        "category": "competition",
+        "rank": "1st Place",
+        "imageUrl": "https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": "2",
+        "title": "Veni Vidi Vici CTF",
+        "description": "Capture The Flag competition organized by the Indian Institute of Technology (IIT), Dharwad on January 30–31, 2025.",
+        "year": "Jan 2025",
+        "category": "competition",
+        "rank": "2nd Place",
+        "imageUrl": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": "3",
+        "title": "ACN Capture The Flag",
+        "description": "Held during Amrita CyberNation 3rd Edition (Sept 11–12, 2024), organized by the Department of Computer Science and Engineering, Amrita School of Computing, Chennai.",
+        "year": "Sept 2024",
+        "category": "competition",
+        "rank": "3rd Place",
+        "imageUrl": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": "4",
+        "title": "KLE GIT × IITB CTF",
+        "description": "Conducted by IEEE CS, KLE GIT Belgaum in collaboration with the Trust Lab, IIT Bombay on May 15, 2025, at KLE GIT, Belgaum.",
+        "year": "May 2025",
+        "category": "competition",
+        "rank": "3rd Place",
+        "imageUrl": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800"
+    }
+]

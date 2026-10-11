@@ -1,0 +1,29 @@
+[
+  {
+    "id": "b1",
+    "title": "How we won the Regional CTF",
+    "date": "2023-12-05",
+    "excerpt": "A deep dive into the final web exploitation challenge that secured our victory.",
+    "content": "\n# Victory at Regionals\n\nThe final challenge involved a complex **SQL injection** vulnerability that was chained with a Local File Inclusion (LFI).\n\n## The Reconnaissance\n\nWe started by scanning the target host using `nmap`:\n\n```bash\nnmap -sC -sV -p- 10.10.10.5\n```\n\nThe scan revealed a web server running on port 8080. Upon visiting the site, we found a login page that seemed standard, but the URL parameter `?page=login` looked suspicious.\n\n## The Exploit\n\nAfter fuzzing the parameter, we confirmed an LFI vulnerability.\n\n*   **Step 1**: Read `/etc/passwd`\n*   **Step 2**: Locate the source code\n*   **Step 3**: Find the hidden admin endpoint\n\n> \"Security is not a product, but a process.\" - Bruce Schneier\n\nWe eventually found a hardcoded API key in a config file which allowed us to bypass the SQL query filter.\n\n## Conclusion\n\nThis CTF taught us the importance of checking for configuration files when LFI is present. Great job team!",
+    "author": "Sarah Jones",
+    "tags": ["CTF", "Web Security"]
+  },
+  {
+    "id": "b2",
+    "title": "Setting up a Home Lab",
+    "date": "2024-01-15",
+    "excerpt": "Hardware recommendations and software stack for your personal penetration testing lab.",
+    "content": "\n# Building Your Fortress\n\nYou do not need expensive servers. An old laptop and **Proxmox** are enough to simulate an enterprise network.\n\n## Hardware Requirements\n\n1.  **CPU**: At least 4 cores (Intel i5 or equivalent)\n2.  **RAM**: 16GB minimum (32GB recommended)\n3.  **Storage**: 500GB SSD\n\n## Software Stack\n\nWe recommend using a Type-1 Hypervisor like Proxmox VE.\n\n```bash\n# Download the ISO\nwget https://www.proxmox.com/en/downloads\n```\n\n### Essential VMs to Install\n\n*   **Kali Linux**: Your attack box.\n*   **Metasploitable**: A vulnerable target.\n*   **Windows Active Directory**: To practice AD attacks.\n\nHappy Hacking!",
+    "author": "Alex Chen",
+    "tags": ["Home Lab", "Hardware"]
+  },
+  {
+    "id": "b3",
+    "title": "The Future of Quantum Cryptography",
+    "date": "2024-03-10",
+    "excerpt": "Analyzing the impact of quantum computing on current encryption standards.",
+    "content": "\n# The Quantum Threat\n\nRSA encryption relies on the difficulty of **prime factorization**. Quantum computers, running Shor's Algorithm, could theoretically solve this problem exponentially faster than classical computers.\n\n## Post-Quantum Cryptography (PQC)\n\nNIST has been working on standardizing algorithms that are resistant to quantum attacks.\n\n### Key Candidates\n\n1.  **Crystals-Kyber**: Key Encapsulation Mechanism (KEM)\n2.  **Crystals-Dilithium**: Digital Signatures\n\n## What should we do?\n\nStart auditing your systems for legacy encryption protocols. Transitioning to **AES-256** is a good stopgap, as symmetric encryption is less vulnerable to quantum attacks (Grover's Algorithm only provides a quadratic speedup).",
+    "author": "Marcus Johnson",
+    "tags": ["Cryptography", "Research"]
+  }
+]

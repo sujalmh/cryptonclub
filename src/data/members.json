@@ -1,0 +1,45 @@
+[
+  {
+    "id": "m1",
+    "name": "Sujal M H",
+    "role": "President",
+    "bio": "Leading the club's strategic vision and cybersecurity initiatives.",
+    "imageUrl": "/members/sujal.jpg",
+    "socials": {
+      "linkedin": "https://linkedin.com",
+      "github": "https://github.com"
+    }
+  },
+  {
+    "id": "m2",
+    "name": "Sujnan Kumar",
+    "role": "Tech Lead",
+    "bio": "Expert in technical infrastructure and CTF challenge development.",
+    "imageUrl": "/members/sujnan.jpg",
+    "socials": {
+      "linkedin": "https://linkedin.com",
+      "github": "https://github.com"
+    }
+  },
+  {
+    "id": "m3",
+    "name": "Yashas Shetty",
+    "role": "Treasurer",
+    "bio": "Managing club resources and sponsorships.",
+    "imageUrl": "/members/yashas.jpg",
+    "socials": {
+      "linkedin": "https://linkedin.com"
+    }
+  },
+  {
+    "id": "m4",
+    "name": "Suhan D Shet",
+    "role": "PR Manager",
+    "bio": "Handling public relations, outreach, and community engagement.",
+    "imageUrl": "/members/suhan.jpg",
+    "socials": {
+      "linkedin": "https://linkedin.com",
+      "twitter": "https://twitter.com"
+    }
+  }
+]
